@@ -44,6 +44,8 @@ p.preset = "Hokusai - Red Fuji"
 pipeline.run_file(r"E:/dem.tif", r"E:/dem_ukiyoe.png", p)
 ```
 
+![Fuji, Hiroshige - Dusk palette](docs/fuji.png.png)
+
 ## Parameters
 
 ### General
