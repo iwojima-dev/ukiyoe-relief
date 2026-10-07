@@ -149,6 +149,8 @@ Visibility is resolved front to back. A cell is visible where it rises above the
 
 Before compositing, each colour plate is shifted by a random sub-pixel offset (misregistration) and modulated by wood grain. The grain is a sinusoid of distance across the fibres, warped by fractal noise. Value noise and fractional Brownian motion follow the standard procedural texturing approach (Perlin, 1985; Ebert et al., 2003).
 
+![Atlasov island, Hiroshige - Dusk palette](docs/atls2.png)
+
 ## Code layout
 
 ```
@@ -183,7 +185,6 @@ GNU General Public License v2.0 or later. See [LICENSE](LICENSE).
 - Lindeberg, T. (1998). Edge detection and ridge detection with automatic scale selection. *International Journal of Computer Vision*, 30(2), 117–156. [PDF](https://people.kth.se/~tony/papers/cvap191.pdf)
 - Perlin, K. (1985). An image synthesizer. *ACM SIGGRAPH Computer Graphics*, 19(3), 287–296. [SIGGRAPH archive](https://history.siggraph.org/?p=107418)
 - Ebert, D. S., Musgrave, F. K., Peachey, D., Perlin, K., & Worley, S. (2003). *Texturing and Modeling: A Procedural Approach* (3rd ed.). Morgan Kaufmann. [Publisher](https://shop.elsevier.com/books/texturing-and-modeling/ebert/978-1-55860-848-1)
-- Copernicus DEM Product Handbook (GLO-30 / GLO-90). [PDF](https://dataspace.copernicus.eu/sites/default/files/media/files/2024-06/geo1988-copernicusdem-spe-002_producthandbook_i5.0.pdf)
 - GDAL: gdal_sieve. [Documentation](https://gdal.org/programs/gdal_sieve.html)
 - ContourPy. [Documentation](https://contourpy.readthedocs.io/)
 - Department of Asian Art, The Metropolitan Museum of Art. Woodblock Prints in the Ukiyo-e Style. *Heilbrunn Timeline of Art History*. [Essay](https://www.metmuseum.org/essays/woodblock-prints-in-the-ukiyo-e-style)
