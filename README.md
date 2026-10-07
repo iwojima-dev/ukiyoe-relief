@@ -151,7 +151,7 @@ Visibility is resolved front to back. A cell is visible where it rises above the
 
 Before compositing, each colour plate is shifted by a random sub-pixel offset (misregistration) and modulated by wood grain. The grain is a sinusoid of distance across the fibres, warped by fractal noise. Value noise and fractional Brownian motion follow the standard procedural texturing approach (Perlin, 1985; Ebert et al., 2003).
 
-![Atlasov island, Hiroshige - Dusk palette](docs/atls2.png)
+![Atlasov island, Hokusai - Prussian blue palette](docs/atls2.png)
 
 ## Code layout
 
