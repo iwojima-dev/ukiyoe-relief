@@ -1,0 +1,21 @@
+[general]
+name=Ukiyo-e Relief
+qgisMinimumVersion=3.22
+description=Renders a DEM as a Japanese woodblock print (ukiyo-e): flat colour plates, bokashi, key-block outlines, misregistration, wood grain and washi paper. Works on any platform; no extra software required.
+about=Deterministic, parameter-driven rendering of digital elevation models in the style of Japanese woodblock prints. Two modes: a georeferenced plan view (GeoTIFF) and an oblique layered landscape with aerial perspective (PNG). Everything is computed from the DEM by an algorithm; no AI is involved and the same seed always gives the same print.
+    Dependencies: only libraries shipped with QGIS (numpy, GDAL, matplotlib). SciPy is used when present to speed up labelling, but is optional. No separate installation is needed.
+version=1.8.2
+author=Maksim Boiko
+email=boandch@gmail.com
+changelog=1.8.2 - First public release.
+    Plan view (GeoTIFF) and layered landscape (PNG) modes; automatic sea detection; Hokusai and Hiroshige palettes; silhouette-only key-block outlines; relief curve and automatic vertical exaggeration; snow following gullies; simulated woodblock printing.
+category=Raster
+tags=dem,relief,hillshade,cartography,art,ukiyo-e,woodblock,visualization
+homepage=https://github.com/iwojima-dev/ukiyoe-relief
+repository=https://github.com/iwojima-dev/ukiyoe-relief
+tracker=https://github.com/iwojima-dev/ukiyoe-relief/issues
+icon=icon.png
+experimental=False
+deprecated=False
+hasProcessingProvider=no
+license=GPL-2.0-or-later
