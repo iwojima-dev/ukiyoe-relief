@@ -17,9 +17,10 @@ Both modes finish with a simulated print run. Each colour plate is inked and pri
 
 ## Installation
 
-1. Download `ukiyoe_relief-<version>.zip` from the [Releases](../../releases) page (not the green *Code → Download ZIP* button: that archive has a different folder layout).
-2. In QGIS, open *Plugins → Manage and Install Plugins → Install from ZIP* and select it.
-3. The tool appears under *Raster → Ukiyo-e Relief* and on its own toolbar.
+- **From QGIS:** *Plugins → Manage and Install Plugins*, search for *Ukiyo-e Relief*.
+- **From a ZIP:** download `ukiyoe_relief-<version>.zip` from the [Releases](https://github.com/iwojima-dev/ukiyoe-relief/releases) page, then *Plugins → Manage and Install Plugins → Install from ZIP*.
+
+The tool appears under *Raster → Ukiyo-e Relief* and on its own toolbar.
 
 QGIS 3.22 or newer is required.
 
@@ -156,29 +157,27 @@ Before compositing, each colour plate is shifted by a random sub-pixel offset (m
 ## Code layout
 
 ```
-ukiyoe_relief/                  the plugin package (what QGIS installs)
-  core/filters.py               Gaussian, hillshade, curvature, sampling
-  core/noise.py                 value noise, fBm, wood grain, washi
-  core/posterize.py             quantile classes, sieve
-  core/water.py                 sea / lake detection
-  core/linework.py              isolines, silhouette tracing, brush strokes
-  core/plan.py                  plan view renderer
-  core/oblique.py               layered landscape renderer
-  core/printing.py              plate compositing and print effects
-  core/presets.py               palettes
-  core/params.py                parameter table (also drives the dialog)
-  core/io_raster.py             GDAL input / output
-  core/pipeline.py              entry points
-  dialog.py, task.py, plugin.py QGIS interface
-tools/make_zip.py               builds the installable ZIP into dist/
-docs/                           images for this README
+core/filters.py               Gaussian, hillshade, curvature, sampling
+core/noise.py                 value noise, fBm, wood grain, washi
+core/posterize.py             quantile classes, sieve
+core/water.py                 sea / lake detection
+core/linework.py              isolines, silhouette tracing, brush strokes
+core/plan.py                  plan view renderer
+core/oblique.py               layered landscape renderer
+core/printing.py              plate compositing and print effects
+core/presets.py               palettes
+core/params.py                parameter table (also drives the dialog)
+core/io_raster.py             GDAL input / output
+core/pipeline.py              entry points
+dialog.py, task.py, plugin.py QGIS interface
+docs/                         images for this README
 ```
 
-To build the installable archive yourself, run `python tools/make_zip.py` from the repository root.
+## Author and license
 
-## License
+Maksim Boiko ([boandch@gmail.com](mailto:boandch@gmail.com)).
 
-GNU General Public License v2.0 or later. See [LICENSE](LICENSE).
+Released under the GNU General Public License, version 2 or (at your option) any later version. See [LICENSE](LICENSE).
 
 ## References
 
